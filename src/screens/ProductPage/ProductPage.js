@@ -2,11 +2,10 @@ import React from 'react'
 import { Dimensions, FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { SharedElement } from 'react-navigation-shared-element'
 import MyHeader from '../../components/MyHeader'
+import Colors from '../../global/Colors'
 import { bagsList } from '../../DummyData/Constants'
 import { ScreenNames } from '../../global'
-import Colors from '../../global/Colors'
 const { width } = Dimensions.get('window');
-
 const ListItem = ({ item, navigation }) => {
   return (
     <View style={styles.item}>
@@ -18,14 +17,14 @@ const ListItem = ({ item, navigation }) => {
         </SharedElement>
       </TouchableOpacity>
       <View style={styles.textContainer}>
-        <Text style={[styles.text, { color: Colors.darkGray }]}>{item.title}</Text>
+        <Text style={[styles.text, { color: Colors.darkGray }]}>{item.title} </Text>
         <Text style={styles.text}>${item.price}</Text>
       </View>
     </View>
   )
 }
 
-export default function MyCalendar({ navigation, route }) {
+export default function ProductPage({ navigation, route }) {
   return (
     <View style={styles.container}>
       <MyHeader

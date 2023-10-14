@@ -1,6 +1,6 @@
 export const colors = {
-    primary: '#60c5a8',
-    primaryDark: '#039a83',
+    primary: '#e9edc9',
+    primaryDark: '#ccd5ae',
     normal: '#b0e6fd',
     important: '#e892ab',
     icon1: '#ea7a72',

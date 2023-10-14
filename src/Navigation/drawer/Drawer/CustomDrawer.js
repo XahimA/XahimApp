@@ -100,7 +100,7 @@ const CustomDrawer1 = (props) => {
       {/* header */}
       <Animated.View style={[styles.row, styles.view, styles.marginTop, viewStyles2('top')]}>
         <View style={styles.iconContainer}>
-          <Icon name="logo-electron" type={Icons.Ionicons} size={30} />
+          <Icon name="peace" type={Icons.FontAwesome5} size={30} />
         </View>
         <Text style={styles.headerTitle}>Hello there👋</Text>
       </Animated.View>
@@ -113,7 +113,7 @@ const CustomDrawer1 = (props) => {
         <DrawerItemList {...props} styles={styles} />
         {/* 2nd menu */}
         <View style={[styles.view, styles.marginVertical]}>
-          <Text>Projects 3</Text>
+          <Text>Add Memo</Text>
           <View style={styles.separator} />
           {ProjectsArray.map((_, i) => (
             <ProjectItem key={i}

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Dimensions, Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { SharedElement } from 'react-navigation-shared-element'
-import Icon, { Icons } from '../../components/Icons'
-import MyHeader from '../../components/MyHeader'
 import Colors from '../../global/Colors'
+import Icon, { Icons } from '../../components/Icons';
+import MyHeader from '../../components/MyHeader';
 const { width, height } = Dimensions.get('window');
 
 const colors = [
@@ -13,7 +13,7 @@ const colors = [
   Colors.black,
 ]
 const ColorsSelector = () => {
-  const [selected, setSelected] = useState(0)//index
+  const [selected, setSelected] = useState(0)
   return (
     <View style={styles.container}>
       <Text>Colors</Text>
