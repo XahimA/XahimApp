@@ -1,11 +1,11 @@
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useReducer, useRef } from 'react'
 import { useDrawerProgress } from '@react-navigation/drawer'
-import { colors, constant } from '../../../global/colors'
+import { colors, constant } from '../colors'
 import { ProfileMenu, ProjectsArray } from '../arrays'
 import DrawerItemList from './DrawerItemList'
 import Animated, { interpolate, useAnimatedStyle, useDerivedValue, withTiming } from 'react-native-reanimated'
-import Icon from '../../../components/Icons'
+import Icon, { Icons } from '../../../components/Icons'
 
 const ProjectItem = ({
   label, onPress, type, name,

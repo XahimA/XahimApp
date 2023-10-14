@@ -3,8 +3,7 @@ import { Dimensions, Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOp
 import { SharedElement } from 'react-navigation-shared-element'
 import Icon, { Icons } from '../../components/Icons'
 import MyHeader from '../../components/MyHeader'
-import Colors from '../../constants/Colors'
-import { bagsList } from '../../constants/Constants'
+import Colors from '../../global/Colors'
 const { width, height } = Dimensions.get('window');
 
 const colors = [

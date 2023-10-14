@@ -1,6 +1,6 @@
 import { Icons } from "../../components/Icons";
 import { ScreenNames } from "../../global";
-import { colors } from "../../global/colors";
+import { colors } from "./colors";
 import HomeScreen from "../../screens/HomeScreen/HomeScreen";
 import MyActivity from "../../screens/MyActivity/MyActivity";
 import MyCalendar from "../../screens/MyCalendar/MyCalendar";

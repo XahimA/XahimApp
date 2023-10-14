@@ -11,6 +11,7 @@ import SplashScreen from "../../screens/Splash/SplashScreen";
 import DrawerNav from '../drawer/Drawer/DrawerNav';
 import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
 import { CardStyleInterpolators } from '@react-navigation/stack';
+import ProductDetailScreen from '../../screens/ProductDetailScreen/ProductDetailScreen';
 
 
 const MainStack = () => {
@@ -28,11 +29,10 @@ const MainStack = () => {
   const showHeader = false;
   return (
     <>
-      <StatusBar backgroundColor={Colors.WHITE} barStyle='dark-content' />
+      <StatusBar backgroundColor={Colors.white} barStyle='dark-content' />
         <Stack.Navigator screenOptions={{ headerShown: showHeader }}
           initialRouteName={inititalRouteName}
         >
-
           <Stack.Screen name={ScreenNames.SPLASH} component={SplashScreen} />
           <Stack.Screen name={ScreenNames.DRAWERNAV} component={DrawerNav} />
           <Stack.Screen name={ScreenNames.PRODUCT_DETAIL_SCREEN} component={ProductDetailScreen}

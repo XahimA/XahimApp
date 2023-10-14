@@ -1,7 +1,8 @@
-import { View, Text } from 'react-native'
+import {  SafeAreaView, StatusBar, useColorScheme } from 'react-native'
 import React from 'react'
 import MainStack from './Navigation/MainStack/MainStack'
 import { NavigationContainer } from '@react-navigation/native';
+import { Colors } from './global';
 
 
 const App = () => {

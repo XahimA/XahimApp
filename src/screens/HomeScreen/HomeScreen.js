@@ -1,6 +1,6 @@
 import React from 'react'
 import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
-import { colors } from '../../global/colors'
+import { colors } from '../../Navigation/drawer/colors'
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Icon from 'react-native-vector-icons/EvilIcons';
 

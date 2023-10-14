@@ -1,6 +1,6 @@
 import { Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import { colors } from '../../../global/colors'
+import { colors } from '../colors'
 import Icon from '../../../components/Icons'
 
 
