@@ -9,14 +9,14 @@ import { Colors, ScreenNames } from '../../global/index';
 //screens
 import SplashScreen from "../../screens/Splash/SplashScreen";
 
-import { SPLASH } from '../../global/screenNames';
+import DrawerNav from '../drawer/Drawer/DrawerNav';
 
 
 const MainStack = () => {
 
   const Stack = createStackNavigator();
 
-  const inititalRouteName = ScreenNames.SPLASH;
+  const inititalRouteName = ScreenNames.DRAWER;
 
   const showHeader = false;
 
@@ -28,7 +28,8 @@ const MainStack = () => {
           initialRouteName={inititalRouteName}
         >
 
-          <Stack.Screen name={ScreenNames.SPLASH} component={SplashScreen} />
+          {/* <Stack.Screen name={ScreenNames.SPLASH} component={SplashScreen} /> */}
+          <Stack.Screen name={ScreenNames.DRAWER} component={DrawerNav} />
 
         </Stack.Navigator>
       </NavigationContainer>

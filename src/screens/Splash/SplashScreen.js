@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react'
-import { Image, StatusBar, StyleSheet, Text, View } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { CommonActions } from '@react-navigation/native';
-
+import { Image, View } from 'react-native';
 //styles & Services
 import { styles } from './SplashStyle';
 import { Colors, ScreenNames } from '../../global/index';
@@ -12,7 +9,7 @@ const SplashScreen = ({ navigation }) => {
 
   const retriveData = async () => {
     try {
-     
+     navigation.dispatch(ScreenNames.DRAWER)
     } catch (error) {
       console.log('error', error);
 
