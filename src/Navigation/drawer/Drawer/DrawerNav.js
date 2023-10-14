@@ -3,6 +3,8 @@ import React from 'react'
 import { Platform, StyleSheet } from 'react-native'
 import { ScreensArray } from '../arrays';
 import CustomDrawer1 from './CustomDrawer';
+import { ScreenNames } from '../../../global';
+import HomeScreen from '../../../screens/HomeScreen/HomeScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -23,6 +25,7 @@ const DrawerNav = () => {
           }}
         />
       ))}
+   
     </Drawer.Navigator>
   )
 }
