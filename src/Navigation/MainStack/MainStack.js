@@ -1,37 +1,33 @@
 import React from 'react'
 import { StatusBar } from 'react-native'
-
-// third party library
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-//style
 import { Colors, ScreenNames } from '../../global/index';
-//screens
 import SplashScreen from "../../screens/Splash/SplashScreen";
-
-import { SPLASH } from '../../global/screenNames';
+import DrawerNav from '../drawer/Drawer/DrawerNav';
+import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
+import { CardStyleInterpolators } from '@react-navigation/stack';
+import ProductDetailScreen from '../../screens/ProductDetailScreen/ProductDetailScreen';
 
 
 const MainStack = () => {
-
-  const Stack = createStackNavigator();
-
-  const inititalRouteName = ScreenNames.SPLASH;
-
-  const showHeader = false;
-
+  const Stack = createSharedElementStackNavigator();
+  const options = {
+    gestureEnabled: true,
+    gestureDirection: 'horizontal',
+    cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+    headerShown: false,
+  }
   return (
     <>
-      <StatusBar backgroundColor={Colors.WHITE} barStyle='dark-content' />
-      <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: showHeader }}
-          initialRouteName={inititalRouteName}
-        >
-
+      <StatusBar backgroundColor={Colors.white} barStyle='dark-content' />
+      <Stack.Navigator screenOptions={options}>
           <Stack.Screen name={ScreenNames.SPLASH} component={SplashScreen} />
-
+          <Stack.Screen name={ScreenNames.DRAWERNAV} component={DrawerNav} />
+          <Stack.Screen name={ScreenNames.PRODUCT_DETAIL_SCREEN} component={ProductDetailScreen}
+        options={{
+          cardStyleInterpolator: CardStyleInterpolators.forVerticalIOS,
+        }}
+      />
         </Stack.Navigator>
-      </NavigationContainer>
     </>
   )
 }
