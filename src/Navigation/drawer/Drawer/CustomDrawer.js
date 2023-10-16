@@ -24,6 +24,7 @@ const ProjectItem = ({
 }
 
 const ProfileItem = ({ label, onPress, type, name }) => {
+  console.log("++++++++++++++++++++RUNNING ")
   return (
     <TouchableOpacity
       onPress={onPress}
@@ -50,7 +51,7 @@ const CustomDrawer1 = (props) => {
     toggleProfile()
   }
 
-  const progress = useDerivedValue(() => {
+  const progress = useDrawerProgress(() => {
     return show ? withTiming(1) : withTiming(0);
   })
 
@@ -136,6 +137,7 @@ const CustomDrawer1 = (props) => {
             <ProfileItem key={i} label={_.label}
               type={_.iconType}
               name={_.icon}
+              onPress={()=>{}}
             />
           ))}
           <Text style={{ marginTop: 10 }}>v1.0.0 - Terms & Condition</Text>
