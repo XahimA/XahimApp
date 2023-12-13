@@ -24,7 +24,6 @@ const ProjectItem = ({
 }
 
 const ProfileItem = ({ label, onPress, type, name }) => {
-  console.log("++++++++++++++++++++RUNNING ")
   return (
     <TouchableOpacity
       onPress={onPress}

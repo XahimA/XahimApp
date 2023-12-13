@@ -1,4 +1,4 @@
-import * as Colors from './Colors';
+import * as Colors from './colors';
 import * as Fonts from './fonts';
 import * as ScreenNames from './screenNames';
 import * as Constants from './constants';

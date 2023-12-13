@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Dimensions, Image, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { SharedElement } from 'react-navigation-shared-element'
-import Colors from '../../global/Colors'
+import Colors from '../../global/colors'
 import Icon, { Icons } from '../../components/Icons';
 import MyHeader from '../../components/MyHeader';
 const { width, height } = Dimensions.get('window');

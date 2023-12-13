@@ -2,7 +2,7 @@ import React from 'react'
 import { Dimensions, FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { SharedElement } from 'react-navigation-shared-element'
 import MyHeader from '../../components/MyHeader'
-import Colors from '../../global/Colors'
+import Colors from '../../global/colors'
 import { bagsList } from '../../DummyData/Constants'
 import { ScreenNames } from '../../global'
 const { width } = Dimensions.get('window');
