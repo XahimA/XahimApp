@@ -1,10 +1,9 @@
 
-export const SPLASH = 'SPLASH';
-export const DRAWERNAV = 'DRAWERNAV';
-export const HOMESCREEN = 'HOMESCREEN';
-export const PRODUCT_PAGE = 'PRODUCT_PAGE';
-export const SETTINGS = 'SETTINGS';
-export const MY_INBOX = 'MY_INBOX';
-export const MY_ACTIVITY = 'MY_ACTIVITY';
-export const ESSENTIALS = 'ESSENTIALS';
-export const PRODUCT_DETAIL_SCREEN = 'PRODUCT_DETAIL_SCREEN';
+export const SPLASH_SCREEN = 'SPLASH_SCREEN';
+export const LOGINSCREEN = 'LOGINSCREEN';
+export const OTP_SCREEN = 'OTP_SCREEN';
+export const RESET_PASSWORD = 'RESET_PASSWORD';
+export const LOGIN_BY_EMAIL_SCREEN = 'LOGIN_BY_EMAIL_SCREEN';
+export const FORGOT_PASSWORD = 'FORGOT_PASSWORD';
+
+
